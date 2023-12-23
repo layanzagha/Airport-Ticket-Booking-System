@@ -12,7 +12,7 @@ namespace AirportTicketBookingSystem
         private List<Flight> flights = new List<Flight>();
         private List<Passenger> passengers = new List<Passenger>();
         private int bookingIdCounter = 1;
-        string csvFilePath = @"C:\Users\User\Desktop\Airport Ticket.csv";
+        string csvFilePath;
         public void AddFlight(Flight flight)
         {
             flight.FlightNumber = bookingIdCounter++;
